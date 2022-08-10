@@ -7,9 +7,21 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
   <body>
-    <%= yield %>
-  </body>
+
+ <header class="header">
+  <div class="header__inner">
+   <div class="header__title">
+    <h1>Cheat</h1>
+     </div>
+     </div>
+      <div class="nav__right">
+       <%= link_to "PUSH", class: :nav__btn %>
+       
+   </div>
+  </div>
+ </header>
+ <%= yield %>
+
+</body>
 </html>
