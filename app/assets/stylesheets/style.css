@@ -52,6 +52,19 @@ div {
     position:absolute;
 	right:90px;
 	top:80px;
+  font-size: 30px;
+  padding: 0rem 1rem;
+  color: #fff;
+  background: #094;
+  -webkit-box-shadow: 5px 5px 0 #007032;
+  box-shadow: 5px 5px 0 #007032;
+}
+
+
+
+  
+  :any-link {
+    color: #fff;
   }
   
 
