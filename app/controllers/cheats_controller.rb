@@ -8,8 +8,14 @@ def new
 end
 
 def create
-  Cheat.create(cheat_params)
-
+  @cheat = Cheat.new(cheat_params)
+  if @cheat.save
+    redirect_to root_path
+  else
+    render :new
+end
+   
+    
 end
 private
 def cheat_params
