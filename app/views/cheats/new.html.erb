@@ -3,19 +3,19 @@
     <div class="form__wrapper">
      
         <%# 部分テンプレートでフォームを表示する %>
-   <%= form_with model: @prototype, local: true do |f|%>
+   <%= form_with model: @cheat, local: true do |f|%>
  
 
    
 
   <div class="field">
-    <%= f.label :concept, "name" %><br />
-    <%= f.text_area :concept, class: :form__text, id:"prototype_concept" %>
+    <%= f.label :name, "name" %><br />
+    <%= f.text_area :name, class: :form__text, id:"cheat_concept" %>
   </div>
 
   <div class="field">
     <%= f.label :image, "eat" %><br />
-    <%= f.file_field :image, id:"prototype_image" %>
+    <%= f.file_field :image, id:"cheat_image" %>
   </div>
 
   <div class="actions">
