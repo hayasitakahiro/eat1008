@@ -1,1 +1,27 @@
->>>>>>>>
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+     
+        <%# 部分テンプレートでフォームを表示する %>
+   <%= form_with model: @prototype, local: true do |f|%>
+ 
+
+   
+
+  <div class="field">
+    <%= f.label :concept, "name" %><br />
+    <%= f.text_area :concept, class: :form__text, id:"prototype_concept" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "eat" %><br />
+    <%= f.file_field :image, id:"prototype_image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+  <% end %>
+    </div>
+  </div>
+</div>
