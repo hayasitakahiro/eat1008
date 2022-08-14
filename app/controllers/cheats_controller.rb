@@ -19,6 +19,13 @@ def show
   @cheat = Cheat.find(params[:id])
 end
     
+def destroy
+  tweet = Tweet.find(params[:id])
+  tweet.destroy
+end
+
+def edit
+end
 end
 private
 def cheat_params
