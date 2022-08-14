@@ -15,6 +15,9 @@ def create
     render :new
 end
    
+def show
+  @cheat = Cheat.find(params[:id])
+end
     
 end
 private
