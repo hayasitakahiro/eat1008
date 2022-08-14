@@ -3,13 +3,10 @@
  <div class="nav__right">
         <%= link_to "PUSH", new_cheat_path, class: :nav__btn %>
  </div>
- <div class="lower-message">
-    <div class="message-content">
-      <!-- 投稿したメッセージ内容を記述する -->
-      <%= @cheat.name %>
-    </div>
-     <%= image_tag @cheat.image.variant(resize: '500x500'), class: 'cheat-image' if @cheat.image_url.attached? %>
-  </div>
+ <div class="card__wrapper">
+     
+    <%= render partial: 'cheat', collection: @cheat %>
+    
 </div>
 
 
