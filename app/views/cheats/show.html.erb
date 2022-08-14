@@ -1,9 +1,12 @@
 <div class="prototype__manage">
           <%= link_to "編集する", edit_cheat_path(@cheat.id), method: :get, class: :prototype__btn %>
-          <%= link_to "削除する", cheat_path(@cheate.id), method: :delete, class: :prototype__btn %>
+          
+          <%= link_to "削除する", cheat_path(@cheat.id), method: :delete, class: :prototype__btn %>
         </div>
-        <% end %>
+      
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
       <div class="prototype__image">
        <%= link_to image_tag(@cheat.image) %>
       </div>
+        <%= link_to "編集する", edit_cheat_path(@cheat.id), method: :get, class: :prototype__btn %>
+        <%= link_to "削除する", cheat_path(@cheat.id), method: :delete, class: :prototype__btn %>
