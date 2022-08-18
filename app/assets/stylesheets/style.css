@@ -123,7 +123,7 @@ div {
   cursor: pointer;
 }
 
-
+/*投稿した画像 */
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -139,21 +139,13 @@ div {
   margin-bottom: 16px;
 }
 .card__title {
+  color: #094;
   display: block;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 8px;
   font-weight: bold;
 }
-.card__summary {
-  font-size: 16px;
-}
-.card__user {
-  display: block;
-  font-size: 12px;
-  color: #999;
-  text-align: right;
-  text-decoration: underline;
-}
+
 
 /*詳細ページ */
 eat__wrapper{
