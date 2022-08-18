@@ -1,10 +1,10 @@
-<div class="prototype__manage">
-         
-        </div>
-      
+<div class="eat__manage"></div>
+     
  
-      <div class="prototype__image">
+      <div class="eat__image">
        <%= link_to image_tag(@cheat.image) %>
       </div>
-        <%= link_to "編集する", edit_cheat_path(@cheat.id), method: :get, class: :prototype__btn %>
-        <%= link_to "削除する", cheat_path(@cheat.id), method: :delete, class: :prototype__btn %>
+      <div class="eat__manage">
+        <%= link_to "編集する", edit_cheat_path(@cheat.id), method: :get, class: :eat__btn %>
+        <%= link_to "削除する", cheat_path(@cheat.id), method: :delete, class: :eat__btn %>
+      </div>
