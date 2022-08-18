@@ -32,7 +32,7 @@ end
 
 def edit
   @cheat = Cheat.find(params[:id])
-  redirect_to root_path
+  
 end
 
 def update
