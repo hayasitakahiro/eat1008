@@ -14,6 +14,7 @@ div {
   margin: 0;
   padding: 0;
 }
+
 /* トップページ */
 .header {
   position: absolute;
@@ -136,8 +137,8 @@ div {
   margin-bottom: 40px;
 }
 .card__img {
-  float: left;
-  width: 250px;
+  
+  width: 450px;
   margin-bottom: 16px;
 }
 .card__title {
@@ -145,6 +146,7 @@ div {
   font-size: 20px;
   margin-bottom: 8px;
   font-weight: bold;
+  color: cyan;
 }
 
 
