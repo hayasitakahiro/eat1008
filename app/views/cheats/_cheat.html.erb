@@ -1,8 +1,7 @@
 <div class="card__wrapper">
-<div class="card">
-  <%= link_to image_tag(cheat.image, class: :card__img), cheat_path(cheat)%>
-
-    <%= link_to cheat.name, cheat_path(cheat.id), class: :card__title%>
+ <div class="card">
+ <%= link_to image_tag(cheat.image, class: :card__img), cheat_path(cheat)%>
+ <%= link_to cheat.name, cheat_path(cheat.id), class: :card__title%>
    
-</div>
+ </div>
 </div>

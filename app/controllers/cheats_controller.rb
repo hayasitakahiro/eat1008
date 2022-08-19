@@ -1,51 +1,51 @@
 class CheatsController < ApplicationController
-  def index
+ def index
     @cheat = Cheat.all
   end
 
-def new
+ def new
   @cheat = Cheat.new
-end
+ end
 
-def create
+ def create
 
   @cheat = Cheat.new(cheat_params)
-  if @cheat.save
+   if @cheat.save
     redirect_to root_path
-  else
+   else
     render :new
-end
-end
+   end
+ end
 
-def show
+ def show
  
   @cheat = Cheat.find(params[:id])
-end
+ end
     
-def destroy
+ def destroy
  
   @cheat = Cheat.find(params[:id])
   @cheat.destroy
   
   redirect_to root_path
-end
+ end
 
-def edit
+ def edit
   @cheat = Cheat.find(params[:id])
-  
-end
+  redirect_to root_path
+ end
 
-def update
+ def update
   @cheat = Cheat.find(params[:id])
-  if @cheat.update(cheat_params)
+   if @cheat.update(cheat_params)
     redirect_to cheat_path
   else
     render :edit
-  end
-end
+   end
+ end
 
 private
-def cheat_params
+ def cheat_params
   params.require(:cheat).permit(:name, :image)
-end
+ end
 end
