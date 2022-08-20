@@ -16,16 +16,12 @@ div {
 }
 
 /* トップページ */
-.header {
-  position: absolute;
-  width: 100%;
-  padding: 30px 7vw;
-  box-sizing: border-box;
-}
+
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 55px;
 }
 .header__title {
     position: relative;
@@ -82,8 +78,7 @@ div {
   
 
 .background {
-  width: 100%;
-  height: 100vh;
+
   background-image: url(./burger.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,7 +97,7 @@ div {
   width: 100%;
   height: 100vh;
   
-  display: flex;
+display: flex;
   justify-content: center;
   align-items: center;
  
@@ -143,7 +138,7 @@ div {
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 40px 120px;
+  margin: 150px 120px;
  
 }
 .card {
