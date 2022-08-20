@@ -1,12 +1,21 @@
 <body class="background">
-
+ <header class="header">
+      <div class="inner">
+        <div class="nav">
+          <div class="nav__left">
   <div class="nav__right">
-        <%= link_to "PUSH", new_cheat_path, class: :nav__btn %>
-  </div>
+               <%= link_to "ログアウト", destroy_user_session_path, method: :delete,class: :nav__logout %>
+               <%= link_to "PUSH", new_cheat_path, class: :nav__btn %> 
+            </div>
    <div class="card__wrapper">
-     
-    <%= render partial: 'cheat', collection: @cheat %>
-    
+        <%= render partial: 'cheat', collection: @cheat %>
    </div>
+   </div>
+</div>
+</div>
+
+
+
+
 </body>
 
