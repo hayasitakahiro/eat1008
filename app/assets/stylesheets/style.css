@@ -33,7 +33,8 @@ div {
     font-size: 20px;
     padding: 10px 0;
     text-align: center;
-    margin: 1.5em 0;
+    margin-right: auto;
+   
   }
   .header__title:before {
     content: "";
@@ -51,7 +52,7 @@ div {
   }
 
   .nav__btn{
-    position:absolute;
+  position:absolute;
 	right:60px;
 	top:80px;
   font-size: 30px;
@@ -100,7 +101,7 @@ div {
 .form__wrapper{
   width: 100%;
   height: 100vh;
-  background-color: dimgrey;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,17 +143,16 @@ div {
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  margin: 40px 110px;
  
 }
 .card {
   width: calc((100% - 50px) / 3);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .card__img {
   
-  width: 450px;
+  width: 350px;
   margin-bottom: 16px;
 }
 .card__title {
@@ -165,7 +165,7 @@ div {
 
 
 /*詳細ページ */
-eat__wrapper{
+.eat__wrapper{
   min-height: calc(100vh - 161px);
 }
 .eat__hedding{
