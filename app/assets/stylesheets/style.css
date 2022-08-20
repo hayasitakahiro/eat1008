@@ -30,7 +30,7 @@ div {
     padding: 10px 0;
     text-align: center;
     margin-right: auto;
-   
+    
   }
   .header__title:before {
     content: "";
@@ -77,8 +77,8 @@ div {
  
   
 
-.background {
 
+  .background {
   background-image: url(./burger.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +138,9 @@ display: flex;
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: 150px 120px;
+  align-items: center;
+  justify-content: space-between;
+ 
  
 }
 .card {
@@ -146,8 +148,8 @@ display: flex;
   margin-bottom: 30px;
 }
 .card__img {
-  
-  width: 350px;
+
+  width: 450px;
   margin-bottom: 16px;
 }
 .card__title {
