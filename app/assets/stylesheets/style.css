@@ -94,7 +94,11 @@ div {
 
 /*投稿ページ */
 .form__wrapper{
- 
+  display:block;
+  width:150px;
+  margin:0 auto;
+  position: relative;
+  top: 80px
 }
 
 .form__text {
