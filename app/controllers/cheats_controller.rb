@@ -8,7 +8,8 @@ class CheatsController < ApplicationController
 
  def new
   @cheat = Cheat.new
- end
+ 
+end
 
  def create
 
@@ -49,5 +50,5 @@ class CheatsController < ApplicationController
 private
  def cheat_params
   params.require(:cheat).permit(:name, :image).merge(user_id: current_user.id)
- end
+ end 
 end
