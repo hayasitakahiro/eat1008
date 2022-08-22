@@ -1,5 +1,8 @@
 class CheatsController < ApplicationController
- def index
+  before_action :authenticate_user!,  only: [:show, :edit, :destroy]
+ 
+ 
+  def index
     @cheat = Cheat.all
   end
 
@@ -45,6 +48,6 @@ class CheatsController < ApplicationController
 
 private
  def cheat_params
-  params.require(:cheat).permit(:name, :image)
+  params.require(:cheat).permit(:name, :image).merge(user_id: current_user.id)
  end
 end

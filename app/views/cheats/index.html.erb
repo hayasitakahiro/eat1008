@@ -1,19 +1,19 @@
 <body class="background">
- 
-          <div class="nav__left">
-  <div class="nav__right">
+       <% if user_signed_in? %>
+      <div class="nav__left">
+            <div class="nav__right">
                <%= link_to "ログアウト", destroy_user_session_path, method: :delete,class: :nav__logout %>
                <%= link_to "PUSH", new_cheat_path, class: :nav__btn %> 
             </div>
-   <div class="card__wrapper">
-        <%= render partial: 'cheat', collection: @cheat %>
-   </div>
-   </div>
-</div>
-
-
-
-
-
+       <% else %>
+            <div class="nav__right">
+               <%= link_to "ログイン", new_user_session_path, class: :nav__logout %>
+               <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+            </div>
+       <% end %>
+      </div>
+         <div class="card__wrapper">
+           <%= render partial: 'cheat', collection: @cheat %>
+         </div>
 </body>
-
+ 
