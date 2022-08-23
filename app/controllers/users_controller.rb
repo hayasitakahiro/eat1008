@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     
    
     @user = User.find(params[:id])
-    @cheat = @user.cheat
+    @cheat = @user.cheats
     
   
   end
