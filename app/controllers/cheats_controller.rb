@@ -34,6 +34,9 @@ end
 
  def edit
   @cheat = Cheat.find(params[:id])
+  unless @cheat.user_id == current_user.id
+    redirect_to root_path
+  end
   
   
  end
