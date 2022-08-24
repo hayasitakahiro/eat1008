@@ -24,16 +24,27 @@ eat1008
 # 画面遷移図  
 [![Image from Gyazo](https://i.gyazo.com/1ebff3d3a9939619c0e9d6e67ab54e39.png)](https://gyazo.com/1ebff3d3a9939619c0e9d6e67ab54e39)  
 
-# cheats テーブル  
+# cheat テーブル  
 | Column            | Type   | Options     |
 | ------------------| ------ | ----------- |
-| name              | string | null: false |
-|
+| name              | string | null: false |  
+| user              |references｜ null: false,foreign_key: true |
 # Association  
 belongs_to :user  
+# users テーブル  
+| Column            | Type   | Options     |
+| ------------------| ------ | ----------- |
+| nickname           | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |  
+
+# Association  
+has_many :cheats
+
 # 開発環境  
 HTML.CSS.RUBY.テキストエディタ  
 # ローカルでの動作方法  
-実装後記述予定  
+新規登録後、タイトル、画像を投稿し6枚投稿したら削除する  
 # 工夫したポイント　  
-実装後記述予定
+あえてヘッダーを作らずに画像をトップページ一面にすることで
+オリジナル感を出しています
